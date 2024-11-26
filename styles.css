@@ -1,0 +1,180 @@
+
+* {
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light aqua background */
+    color: #1f1f1f; /* Dark grey text */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh; /* Ensure the body takes the full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('2693354.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure the background is behind all content */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Dark blue background */
+    padding: 20px 40px; /* Increased padding for larger header */
+    color: white;
+}
+
+.logo img {
+    height: 70px; /* Increased height for larger logo */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px; /* Increased padding for larger input */
+    font-size: 16px; /* Increased font size for input text */
+    border: none;
+    border-radius: 5px 0 0 5px; /* Round left corners */
+    width: 300px; /* Increased width for search bar */
+    color: #003366; /* Dark blue text */
+    background-color: #b3e5fc; /* Light blue background */
+}
+
+.search-bar i {
+    padding: 10px; /* Increased padding for larger icon */
+    border-radius: 0 5px 5px 0; /* Round right corners */
+    font-size: 20px; /* Increased icon size */
+    background-color: #0288d1; /* Blue background */
+    color: white; /* White icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login i {
+    margin-right: 10px;
+    font-size: 20px; /* Increased icon size */
+    color: white;
+}
+
+.login a {
+    color: white; /* White text */
+    text-decoration: none;
+    font-size: 16px; /* Increased font size for login text */
+}
+
+.club-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    overflow: hidden; /* Ensure the container does not overflow */
+}
+
+.club {
+    flex: 1 1 calc(28% - 30px); /* Adjusted to make the divs smaller */
+    margin: 15px; /* Reduced margin for a more compact layout */
+    text-align: center;
+    border: 2px solid #0288d1; /* Blue border */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #81d4fa; /* Light blue background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transitions */
+    width: calc(28% - 30px); /* Ensuring the width and height are equal */
+    height: calc(28% - 30px); /* Ensuring the width and height are equal */
+}
+
+.club img {
+    width: 100%; /* Ensuring the image covers the whole div */
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the div without distortion */
+    display: block;
+}
+
+.club h2 {
+    background-color: #0288d1; /* Blue background */
+    color: white; /* White text */
+    margin: 0;
+    padding: 5px; /* Reduced padding for a more compact layout */
+    position: absolute; /* Positioning it at the bottom of the div */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7; /* Slight opacity for better visibility */
+}
+
+.club a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.club:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    background-color: #0288d1; /* Change background color to blue on hover */
+}
+
+.day {
+    background-color: #0288d1; /* Blue background */
+    color: white; /* White text */
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #003366; /* Dark blue background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white; /* White text */
+    text-decoration: none;
+}
