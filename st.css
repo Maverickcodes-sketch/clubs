@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light aqua background */
+    color: #003366; /* Dark blue text */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007acc; /* Azure blue background */
+    padding: 20px 40px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    margin-right: 20px; /* Add some space between the logo and the heading */
+}
+
+.header-container h1 {
+    flex-grow: 1; /* Allow the heading to take up the remaining space */
+    font-size: 24px;
+    color: #e0f7fa; /* Light aqua text */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #e0f7fa;
+    text-decoration: none;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icon.insta-icon {
+    margin-left: 40px; /* Increased space between Watchlist and Instagram icon */
+}
+
+.icon i {
+    margin-right: 5px;
+}
+
+.header-container a {
+    color: #e0f7fa;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header-container a i {
+    margin-right: 10px;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 26px;
+    color: #007acc; /* Azure blue text */
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section li {
+    background-color: #b2ebf2; /* Light turquoise background */
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section li:hover {
+    background-color: #4dd0e1; /* Darker turquoise on hover */
+}
+
+.exam a,
+.button {
+    color: white;
+    background-color: #007acc; /* Azure blue background */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.exam a:hover,
+.button:hover {
+    background-color: #005b99; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+footer {
+    background-color: #007acc; /* Azure blue background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
